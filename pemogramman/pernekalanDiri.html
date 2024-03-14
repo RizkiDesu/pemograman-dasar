@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapa Pengunjung</title>
+</head>
+<body>
+    <h1>Sapa Pengunjung</h1>
+    <label for="nama">Masukkan Nama Anda:</label>
+    <input type="text" id="nama">
+    <button onclick="sapa()">Sapa</button>
+    <p id="pesan"></p>
+
+    <script>
+        function sapa() {
+            var nama = document.getElementById("nama").value
+            var pesan = "Halo, " + nama + "! Selamat datang di situs web kami."
+            document.getElementById("pesan").textContent = pesan
+        }
+    </script>
+</body>
+</html>
